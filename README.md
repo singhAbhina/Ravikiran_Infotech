@@ -2,7 +2,7 @@
 
 A React-based products management page with full CRUD functionality, pagination, and filtering.
 
-![Uploading image.png…]()
+<img width="1129" height="701" alt="image" src="https://github.com/user-attachments/assets/ccd1de73-cd7f-4a0c-a3f3-53c433ccc2ad" />
 
 
 ## Features
