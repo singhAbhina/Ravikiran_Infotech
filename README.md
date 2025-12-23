@@ -2,6 +2,9 @@
 
 A React-based products management page with full CRUD functionality, pagination, and filtering.
 
+![Uploading image.png…]()
+
+
 ## Features
 
 - ✅ Display products in a table with all details (Image, Name, Category, MRP, Distributor Rate, Retailer Price, UOM, CRT)
