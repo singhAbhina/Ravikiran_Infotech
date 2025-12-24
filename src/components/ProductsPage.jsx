@@ -3,22 +3,22 @@ import './ProductsPage.css'
 
 // Sample product data
 const initialProducts = [
-  { id: 1, name: 'Active', category: 'Milk', mrp: 57, distributorRate: 53.81, retailerPrice: 54.87, uom: '1000 ml', crt: 12, image: 'https://placehold.co/60x60/3498db/white?text=Milk' },
-  { id: 2, name: 'Amul Gold', category: 'Milk', mrp: 28, distributorRate: 26.46, retailerPrice: 27, uom: '500 ml', crt: 28, image: 'https://placehold.co/60x60/3498db/white?text=Milk' },
-  { id: 3, name: 'Tolu', category: 'Milk', mrp: 20, distributorRate: 17.6, retailerPrice: 18, uom: '250 ml', crt: 32, image: 'https://placehold.co/60x60/3498db/white?text=Milk' },
-  { id: 4, name: 'Amul Masti Butter Milk', category: 'Butter Milk', mrp: 5, distributorRate: 4.2, retailerPrice: 4.368, uom: '125 ml', crt: 60, image: 'https://placehold.co/60x60/9b59b6/white?text=Butter' },
-  { id: 5, name: 'Amul Masti Butter Milk', category: 'Butter Milk', mrp: 10, distributorRate: 8.61, retailerPrice: 8.95, uom: '250 ml', crt: 30, image: 'https://placehold.co/60x60/9b59b6/white?text=Butter' },
-  { id: 6, name: 'Amul Kool', category: 'Milk', mrp: 10, distributorRate: 8.79, retailerPrice: 9, uom: '160 ml', crt: 60, image: 'https://placehold.co/60x60/3498db/white?text=Milk' },
-  { id: 7, name: 'Amul Lassi', category: 'Milk', mrp: 10, distributorRate: 8.79, retailerPrice: 9, uom: '160 ml', crt: 60, image: 'https://placehold.co/60x60/3498db/white?text=Milk' },
-  { id: 8, name: 'Heritage Milk', category: 'Milk', mrp: 30, distributorRate: 28.5, retailerPrice: 29, uom: '500 ml', crt: 24, image: 'https://placehold.co/60x60/3498db/white?text=Milk' },
-  { id: 9, name: 'Mother Dairy', category: 'Dahi', mrp: 10, distributorRate: 9.261, retailerPrice: 9.471, uom: '110 gms', crt: 70, image: 'https://placehold.co/60x60/e67e22/white?text=Dahi' },
-  { id: 10, name: 'Amul Dahi', category: 'Dahi', mrp: 76, distributorRate: 70.748, retailerPrice: 71.799, uom: '950 gms', crt: 12, image: 'https://placehold.co/60x60/e67e22/white?text=Dahi' },
-  { id: 11, name: 'Nandini Dahi', category: 'Dahi', mrp: 20, distributorRate: 18.9075, retailerPrice: 19.095, uom: '165 gms', crt: 12, image: 'https://placehold.co/60x60/e67e22/white?text=Dahi' },
-  { id: 12, name: 'Britannia Dahi', category: 'Dahi', mrp: 50, distributorRate: 47.698, retailerPrice: 48.221, uom: '500 gms', crt: 12, image: 'https://placehold.co/60x60/e67e22/white?text=Dahi' },
-  { id: 13, name: 'Amul Taaza', category: 'Dahi', mrp: 10, distributorRate: 9.232, retailerPrice: 9.5995, uom: '75 gms', crt: 24, image: 'https://placehold.co/60x60/e67e22/white?text=Dahi' },
-  { id: 14, name: 'Nestle Dahi', category: 'Dahi', mrp: 50, distributorRate: 47.698, retailerPrice: 48.221, uom: '500 gms', crt: 30, image: 'https://placehold.co/60x60/e67e22/white?text=Dahi' },
-  { id: 15, name: 'Amul Cool', category: 'Milk', mrp: 10, distributorRate: 9.28, retailerPrice: 9.5, uom: '170 ml', crt: 50, image: 'https://placehold.co/60x60/3498db/white?text=Milk' },
-  { id: 16, name: 'Epigamia Greek Yogurt', category: 'Milk', mrp: 69, distributorRate: 65.72, retailerPrice: 66.77, uom: '1000 ml', crt: 12, image: 'https://placehold.co/60x60/3498db/white?text=Milk' },
+  { id: 1, name: 'Active', category: 'Milk',productCode:1, mrp: 57, distributorRate: 53.81, retailerPrice: 54.87, uom: '1000 ml', crt: 12, image: 'https://placehold.co/60x60/3498db/white?text=Milk' },
+  // { id: 2, name: 'Amul Gold', category: 'Milk', mrp: 28, distributorRate: 26.46, retailerPrice: 27, uom: '500 ml', crt: 28, image: 'https://placehold.co/60x60/3498db/white?text=Milk' },
+  // { id: 3, name: 'Tolu', category: 'Milk', mrp: 20, distributorRate: 17.6, retailerPrice: 18, uom: '250 ml', crt: 32, image: 'https://placehold.co/60x60/3498db/white?text=Milk' },
+  // { id: 4, name: 'Amul Masti Butter Milk', category: 'Butter Milk', mrp: 5, distributorRate: 4.2, retailerPrice: 4.368, uom: '125 ml', crt: 60, image: 'https://placehold.co/60x60/9b59b6/white?text=Butter' },
+  // { id: 5, name: 'Amul Masti Butter Milk', category: 'Butter Milk', mrp: 10, distributorRate: 8.61, retailerPrice: 8.95, uom: '250 ml', crt: 30, image: 'https://placehold.co/60x60/9b59b6/white?text=Butter' },
+  // { id: 6, name: 'Amul Kool', category: 'Milk', mrp: 10, distributorRate: 8.79, retailerPrice: 9, uom: '160 ml', crt: 60, image: 'https://placehold.co/60x60/3498db/white?text=Milk' },
+  // { id: 7, name: 'Amul Lassi', category: 'Milk', mrp: 10, distributorRate: 8.79, retailerPrice: 9, uom: '160 ml', crt: 60, image: 'https://placehold.co/60x60/3498db/white?text=Milk' },
+  // { id: 8, name: 'Heritage Milk', category: 'Milk', mrp: 30, distributorRate: 28.5, retailerPrice: 29, uom: '500 ml', crt: 24, image: 'https://placehold.co/60x60/3498db/white?text=Milk' },
+  // { id: 9, name: 'Mother Dairy', category: 'Dahi', mrp: 10, distributorRate: 9.261, retailerPrice: 9.471, uom: '110 gms', crt: 70, image: 'https://placehold.co/60x60/e67e22/white?text=Dahi' },
+  // { id: 10, name: 'Amul Dahi', category: 'Dahi', mrp: 76, distributorRate: 70.748, retailerPrice: 71.799, uom: '950 gms', crt: 12, image: 'https://placehold.co/60x60/e67e22/white?text=Dahi' },
+  // { id: 11, name: 'Nandini Dahi', category: 'Dahi', mrp: 20, distributorRate: 18.9075, retailerPrice: 19.095, uom: '165 gms', crt: 12, image: 'https://placehold.co/60x60/e67e22/white?text=Dahi' },
+  // { id: 12, name: 'Britannia Dahi', category: 'Dahi', mrp: 50, distributorRate: 47.698, retailerPrice: 48.221, uom: '500 gms', crt: 12, image: 'https://placehold.co/60x60/e67e22/white?text=Dahi' },
+  // { id: 13, name: 'Amul Taaza', category: 'Dahi', mrp: 10, distributorRate: 9.232, retailerPrice: 9.5995, uom: '75 gms', crt: 24, image: 'https://placehold.co/60x60/e67e22/white?text=Dahi' },
+  // { id: 14, name: 'Nestle Dahi', category: 'Dahi', mrp: 50, distributorRate: 47.698, retailerPrice: 48.221, uom: '500 gms', crt: 30, image: 'https://placehold.co/60x60/e67e22/white?text=Dahi' },
+  // { id: 15, name: 'Amul Cool', category: 'Milk', mrp: 10, distributorRate: 9.28, retailerPrice: 9.5, uom: '170 ml', crt: 50, image: 'https://placehold.co/60x60/3498db/white?text=Milk' },
+  // { id: 16, name: 'Epigamia Greek Yogurt', category: 'Milk', mrp: 69, distributorRate: 65.72, retailerPrice: 66.77, uom: '1000 ml', crt: 12, image: 'https://placehold.co/60x60/3498db/white?text=Milk' },
 ];
 
 const categories = ['All', 'Milk', 'Butter Milk', 'Dahi'];
@@ -33,8 +33,10 @@ const ProductsPage = () => {
   const [formData, setFormData] = useState({
     name: '',
     category: '',
+    prodCode:'',
     mrp: '',
     distributorRate: '',
+    
     retailerPrice: '',
     uom: '',
     crt: '',
@@ -83,6 +85,7 @@ const ProductsPage = () => {
     setFormData({
       name: product.name,
       category: product.category,
+       prodCode:product.productCode,
       mrp: product.mrp,
       distributorRate: product.distributorRate,
       retailerPrice: product.retailerPrice,
@@ -165,6 +168,7 @@ const ProductsPage = () => {
               <th>Image</th>
               <th>Name</th>
               <th>Category</th>
+              <th>productCode</th>
               <th>MRP</th>
               <th>Distributor Rate</th>
               <th>Retailer Price</th>
