@@ -70,6 +70,7 @@ const ProductsPage = () => {
     setFormData({
       name: '',
       category: '',
+      productCode:'',
       mrp: '',
       distributorRate: '',
       retailerPrice: '',
@@ -192,6 +193,7 @@ const ProductsPage = () => {
                 </td>
                 <td>{product.name}</td>
                 <td>{product.category}</td>
+                <td>{product.productCode}</td>
                 <td>₹{product.mrp}</td>
                 <td>₹{product.distributorRate}</td>
                 <td>₹{product.retailerPrice}</td>
