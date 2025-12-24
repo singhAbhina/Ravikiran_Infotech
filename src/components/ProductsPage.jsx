@@ -33,10 +33,9 @@ const ProductsPage = () => {
   const [formData, setFormData] = useState({
     name: '',
     category: '',
-    prodCode:'',
+    productCode: '',
     mrp: '',
     distributorRate: '',
-    
     retailerPrice: '',
     uom: '',
     crt: '',
@@ -70,7 +69,7 @@ const ProductsPage = () => {
     setFormData({
       name: '',
       category: '',
-      productCode:'',
+      productCode: '',
       mrp: '',
       distributorRate: '',
       retailerPrice: '',
@@ -86,7 +85,7 @@ const ProductsPage = () => {
     setFormData({
       name: product.name,
       category: product.category,
-       prodCode:product.productCode,
+      productCode: product.productCode,
       mrp: product.mrp,
       distributorRate: product.distributorRate,
       retailerPrice: product.retailerPrice,
@@ -287,6 +286,17 @@ const ProductsPage = () => {
 
               <div className="form-row">
                 <div className="form-group">
+                  <label htmlFor="productCode">Product Code *</label>
+                  <input
+                    type="text"
+                    id="productCode"
+                    name="productCode"
+                    value={formData.productCode}
+                    onChange={handleFormChange}
+                    required
+                  />
+                </div>
+                <div className="form-group">
                   <label htmlFor="mrp">MRP *</label>
                   <input
                     type="number"
@@ -298,6 +308,9 @@ const ProductsPage = () => {
                     required
                   />
                 </div>
+              </div>
+
+              <div className="form-row">
                 <div className="form-group">
                   <label htmlFor="distributorRate">Distributor Rate *</label>
                   <input
